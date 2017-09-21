@@ -20,6 +20,8 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/my.css">
 <link rel="stylesheet" type="text/css" href="css/para.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/sky.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--JS-->
 <script type="text/javascript">
@@ -89,11 +91,155 @@ $("#contact").show("slow");
 
 */
 </script>
+<style>
+body {
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7.33333em;
+  height: 7.33333em;
+  margin-left: -3.66667em;
+  margin-top: -3.66667em;
+}
+
+.block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  opacity: 0;
+  width: 2em;
+  height: 2em;
+  background: #fdfdfd;
+  -webkit-animation: show 1s step-end 1 alternate, pulse 1s linear 1 alternate;
+  animation: show 1s step-end 1 alternate, pulse 1s linear 1 alternate;
+}
+
+.block:nth-child(1) {
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-animation-delay: 0.06s;
+  animation-delay: 0.06s;
+}
+
+.block:nth-child(2) {
+  -moz-transform: translate(2.66667em, 0);
+  -ms-transform: translate(2.66667em, 0);
+  -webkit-transform: translate(2.66667em, 0);
+  transform: translate(2.66667em, 0);
+  -webkit-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+}
+
+.block:nth-child(3) {
+  -moz-transform: translate(5.33333em, 0);
+  -ms-transform: translate(5.33333em, 0);
+  -webkit-transform: translate(5.33333em, 0);
+  transform: translate(5.33333em, 0);
+  -webkit-animation-delay: 0.18s;
+  animation-delay: 0.18s;
+}
+
+.block:nth-child(4) {
+  -moz-transform: translate(0, 2.66667em);
+  -ms-transform: translate(0, 2.66667em);
+  -webkit-transform: translate(0, 2.66667em);
+  transform: translate(0, 2.66667em);
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.block:nth-child(5) {
+  -moz-transform: translate(2.66667em, 2.66667em);
+  -ms-transform: translate(2.66667em, 2.66667em);
+  -webkit-transform: translate(2.66667em, 2.66667em);
+  transform: translate(2.66667em, 2.66667em);
+  -webkit-animation-delay: 0.12s;
+  animation-delay: 0.12s;
+}
+
+.block:nth-child(6) {
+  -moz-transform: translate(5.33333em, 2.66667em);
+  -ms-transform: translate(5.33333em, 2.66667em);
+  -webkit-transform: translate(5.33333em, 2.66667em);
+  transform: translate(5.33333em, 2.66667em);
+  -webkit-animation-delay: 0.42s;
+  animation-delay: 0.42s;
+}
+
+.block:nth-child(7) {
+  -moz-transform: translate(0, 5.33333em);
+  -ms-transform: translate(0, 5.33333em);
+  -webkit-transform: translate(0, 5.33333em);
+  transform: translate(0, 5.33333em);
+  -webkit-animation-delay: 0.36s;
+  animation-delay: 0.36s;
+}
+
+.block:nth-child(8) {
+  -moz-transform: translate(2.66667em, 5.33333em);
+  -ms-transform: translate(2.66667em, 5.33333em);
+  -webkit-transform: translate(2.66667em, 5.33333em);
+  transform: translate(2.66667em, 5.33333em);
+  -webkit-animation-delay: 0.24s;
+  animation-delay: 0.24s;
+}
+
+.block:nth-child(9) {
+  -moz-transform: translate(5.33333em, 5.33333em);
+  -ms-transform: translate(5.33333em, 5.33333em);
+  -webkit-transform: translate(5.33333em, 5.33333em);
+  transform: translate(5.33333em, 5.33333em);
+}
+
+@-webkit-keyframes pulse {
+  from,
+  40% {
+    background: #fdfdfd;
+  }
+  to {
+    background: #dadadd;
+  }
+}
+@-webkit-keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+@keyframes pulse {
+  from,
+  40% {
+    background: #fdfdfd;
+  }
+  to {
+    background: #dadadd;
+  }
+}
+@keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+
+</style>
 
 </head>
 
 <body>
-<!-- Paste this code after body tag -->
+<!-- Paste this code after body tag
+background-image:url(images/portfolios/horsehead-nebula-dark-nebula-constellation-orion-87646.jpeg);background-repeat:no-repeat;border:0.01px solid thin #000000"-->
 
 		 <div class="se-pre-con">
          		<div class="cssload-square">
@@ -107,10 +253,10 @@ $("#contact").show("slow");
          </div>
  	<!-- Ends -->
     <div id="home" style="width:100%;height:100%">
-    <div style="width:60%;height:700px;float:left">
+    <div id="first" style="width:60%;height:700px;float:left">
     <h1 class='quote' style="margin-left:-100px;">
-  <span>We’re a team driving you to meet your destiny.</span>
-  <span>... what do you have to be scared of?</span>
+  <span></span>
+  <span></span>
 </h1>
 
 <div class='clouds'>
@@ -118,9 +264,22 @@ $("#contact").show("slow");
   <div class='clouds-2'></div>
   <div class='clouds-3'></div>
 </div>
-
+    
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='title'>
+  <span>
+    WEBBERN
+  </span>
+  <br>
+  <br>
+  <span>
+     STARS WORLD
+  </span>
 </div>
-<div style="width:40%;height:700px;float:right;background-color:#CCCCCC">
+    </div>
+<div id="second" style="width:40%;height:700px;float:right">
 		<div id="wrapper" style="margin-left:-450px">
 			<div id="outline" class="centering" >
 				<div class="base">
@@ -1749,8 +1908,20 @@ C89.825,74.964,96,62.205,96,48z"></path>
 </div>
     <!---------------------------------------------------------------->
     <div class="intro" id="about"  name="about" style="display:none" >
+    <div class="loader">
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+  <span class="block"></span>
+</div>
     	<div class="container">
     	<h2 class="os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.3s">Introduction</h2>
+        
         <span class="line2 os-animation" data-os-animation="rollIn" data-os-animation-delay="0.5s"></span>
         <p class="os-animation" data-os-animation="zoomIn" data-os-animation-delay="0.7s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
     	</div>
